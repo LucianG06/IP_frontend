@@ -1,0 +1,34 @@
+<div class="office-map" fxLayout="column"  >
+  <div class="logo-menu" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="200px">
+    <div class="logo-name" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" fxFlex="80">
+      <img src='../../assets/images/logo.png' alt='image'>
+      <h1>DeskBook</h1>
+    </div>
+    <div class="menu">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" (click)="onHomeClick()"></mat-icon>
+    </div>
+  </div>
+  <div class="day-selection" fxLayout="column" fxLayoutAlign="start center">
+    <h1>Welcome back, name!</h1>
+    <h3>When you select the day you want to book a desk, a map with the available desks will appear.</h3>
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="history" fxLayout="row" fxLayoutAlign="end start">
+    <button mat-raised-button>See your desk bookings</button>
+  </div>
+  <div class="map-booking" fxLayout="row" fxLayoutAlign="start center">
+    <div class="map" fxFlex="80">
+      office map
+    </div>
+    <div class="free-intervals">
+      desk info
+    </div>
+  </div>
+</div>
+
