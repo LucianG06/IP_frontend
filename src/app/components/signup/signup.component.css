@@ -1,0 +1,41 @@
+.body{
+  background-image: url('../../../assets/images/background.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 100% ;
+}
+
+.signup-container{
+  width: 30%;
+  height: 90%;
+  background-color: rgba(174,170,154, 0.5);
+  border-radius: 25px;
+}
+
+.signup-container h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 64px;
+  margin: 0 0 0;
+  text-align: center;
+}
+
+/deep/ .mat-simple-snackbar-action {
+  color: rgb(45, 158, 46);
+  min-height: 80px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/deep/ .mat-simple-snack-bar-content {
+  font-size: 20px;
+}
+
+/deep/  .mat-simple-snackbar-action button {
+  text-align: center;
+  margin: 20px;
+}
+

@@ -1,0 +1,15 @@
+/deep/ .mat-simple-snackbar-action {
+  color: rgb(45, 158, 46);
+  min-height: 80px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/deep/ .mat-simple-snack-bar-content {
+  font-size: 20px;
+}
+
+/deep/  .mat-simple-snackbar-action button {
+  text-align: center;
+  margin: 20px;
+}
