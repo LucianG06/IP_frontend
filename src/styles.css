@@ -1,21 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
 h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   font-size: 250%;
 }
 h2, h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif !important;
   font-weight: lighter;
+  font-size: 20px !important;
 }
 body {
   margin: 2em;
 }
 body, input[type="text"], button {
-  color: #333;
-  font-family: Cambria, Georgia, serif;
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 17px !important;
 }
 button {
   background-color: #eee;
@@ -23,7 +22,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   color: black;
-  font-size: 1.2rem;
+  font-size: 18px !important;
   padding: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
@@ -45,4 +44,6 @@ button:disabled {
 }
 
 html, body { height: 100%; }
+
 body { margin: 0;}
+
