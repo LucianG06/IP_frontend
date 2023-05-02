@@ -1,0 +1,215 @@
+.body{
+  background-image: url('../../../assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 155%;
+}
+
+.logo-name img{
+  width: 5%;
+}
+
+/*mat-icon{*/
+/*  font-size: 40px;*/
+/*}*/
+
+/*.menu{*/
+/*  width: 40px;*/
+/*  height: 45px;*/
+/*}*/
+
+.home-icon{
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+h1{
+  line-height: 64px;
+  font-size: 40px;
+  font-weight: 700;
+  /*line-height: 64px;*/
+  margin: 0 0 0;
+  text-align: center;
+}
+
+.day-selection h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo-menu{
+  background-color: rgba(174,170,154, 0.8);
+  width: 100%;
+}
+
+.logo-name{
+  padding: 20px;
+}
+
+.input-day{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 20%;
+}
+
+.img{
+  opacity: 0.5;
+}
+
+.grid-container {;
+  background-color: rgba(174,170,154, 0.5);
+  display: grid;
+  grid-template-rows: 220px 220px 220px;
+  grid-template-columns: repeat(4, 23fr);
+  grid-column-gap: 120px;
+  padding-top: 45px;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.grid-item {
+  height: 12vh;
+  width: 25vh;
+  padding-top: 7px;
+}
+
+.item-1 {
+  grid-column: 1 / 1;
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.item-2 {
+  grid-area: 1 / 2  ;
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.item-3 {
+  grid-area: 1 / 3 ;
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.item-4 {
+  grid-area: 2/1;
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+.item-5{
+  grid-area: 2/2;
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.item-6{
+
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.item-7{
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.item-8{
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.item-9{
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.item-10{
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.item-11{
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.item-12{
+  background-image: url('../../../assets/images/BirouLog.png');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+.button{
+  font-weight: 900;
+  background-color: rgba(137,136,112, 0.5);
+  right: 0;
+  width: 68%;
+  height: 18%;
+}
+
+.positive {
+  background-color: red;
+}
+
+.negative {
+  /*background-color: rgb(45, 140, 46);*/
+  background-color: rgb(45, 158, 46)
+}
+
+.mixt {
+  background-color: rgba(247, 202, 24);
+}
+
+.history{
+  height: 100px;
+}
+
+

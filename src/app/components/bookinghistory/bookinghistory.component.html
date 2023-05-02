@@ -1,0 +1,27 @@
+<div class="body">
+  <div class="logo-menu" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="200px">
+    <div class="logo-name" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" fxFlex="80">
+      <img src='../../../../../BACK_FRONT/FRONTEND/IP_frontend/src/assets/images/logo.png' alt='image'>
+      <h1>DeskBook</h1>
+    </div>
+    <div class="menu">
+      <mat-icon class="home-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home" (click) = "onHomeClick()"></mat-icon>
+    </div>
+  </div>
+  <div *ngIf="historyBookings" class="wrapper" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <ng-container *ngFor="let booking of historyBookings; let i = index">
+      <div class="box" [ngClass]="'item' + (i+1)" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <div class="detailsBooking" fxLayout="column" fxLayoutAlign="center center">
+          <p>The desk you booked: {{historyBookings!.at(i)!.nameDesk}}</p>
+          <p>The check in date: {{transformDateToString(historyBookings!.at(i)!.checkIn)}}</p>
+          <p>The check out date: {{transformDateToString(historyBookings!.at(i)!.checkOut)}}</p>
+        </div>
+        <div *ngIf="this.dateNow <= historyBookings!.at(i)!.checkIn || (transformDateToStringWithoutTime(historyBookings!.at(i)!.checkIn) === transformDateToStringWithoutTime(dateNow) && historyBookings!.at(i)!.checkIn.getHours() == dateNow.getHours()) "  fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="5px">
+          <button mat-raised-button (click)="onDeleteClick(historyBookings!.at(i)!.nameDesk, historyBookings!.at(i)!.checkIn, historyBookings!.at(i)!.checkOut)">Delete</button>
+          <button mat-raised-button (click)="openDialog(historyBookings!.at(i)!.nameDesk, historyBookings!.at(i)!.checkIn, historyBookings!.at(i)!.checkOut)" >Increase</button>
+          <button mat-raised-button (click)="openDecreaseDialog(historyBookings!.at(i)!.nameDesk, historyBookings!.at(i)!.checkIn, historyBookings!.at(i)!.checkOut)" >Decrease</button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
